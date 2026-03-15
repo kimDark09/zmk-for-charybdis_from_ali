@@ -51,6 +51,106 @@
         tap-ms = <100>;
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        com_bs {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <31 32>;
+            layers = <0 1>;
+        };
+
+        com_del {
+            bindings = <&kp DEL>;
+            key-positions = <32 33>;
+            layers = <0 1>;
+        };
+
+        com_exe {
+            bindings = <&kp LC(E)>;
+            key-positions = <14 15 16>;
+        };
+
+        com_lgui {
+            bindings = <&kp LEFT_WIN>;
+            key-positions = <36 37>;
+        };
+
+        com_left_p {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <19 20>;
+            layers = <0>;
+        };
+
+        com_f5 {
+            bindings = <&kp F5>;
+            key-positions = <16 17>;
+            layers = <0>;
+        };
+
+        com_plus {
+            bindings = <&kp EQUAL>;
+            key-positions = <33 34>;
+            layers = <0>;
+        };
+
+        com_asta {
+            bindings = <&kp ASTRK>;
+            key-positions = <18 19>;
+            layers = <0>;
+        };
+
+        com_right_p {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <20 21>;
+        };
+
+        com_ctrl_c {
+            bindings = <&kp LC(C)>;
+            key-positions = <27 28>;
+        };
+
+        com_ctrl_v {
+            bindings = <&kp LC(V)>;
+            key-positions = <39 40>;
+        };
+
+        com_ctrl_z {
+            bindings = <&kp LC(Z)>;
+            key-positions = <26 27>;
+        };
+
+        com_ctrl_x {
+            bindings = <&kp LC(X)>;
+            key-positions = <39 38>;
+        };
+
+        com_tidle {
+            bindings = <&kp TILDE>;
+            key-positions = <12 13>;
+        };
+
+        com_at {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <13 14>;
+        };
+
+        com_unders {
+            bindings = <&kp LS(MINUS)>;
+            key-positions = <21 22>;
+        };
+
+        com_minus {
+            bindings = <&kp MINUS>;
+            key-positions = <31 20>;
+        };
+
+        com_caps {
+            bindings = <&hold CAPS RIGHT_ALT>;
+            key-positions = <52 31>;
+        };
+    };
+
 behaviors {       
         hml: homewrow_mods_left {
             compatible = "zmk,behavior-hold-tap";
