@@ -227,7 +227,7 @@ behaviors {
 &tab_dance_esc_tab  &hold LS(Q) Q  &hold LS(W) W         &hold LS(E) E           &hold LS(R) R         &hold LS(T) T     &hold LS(Y) Y  &hold LS(U) U          &hold LS(I) I          &hold LS(O) O      &hold LS(P) P         &kp BACKSPACE
 &kp LEFT_CONTROL    &hold LS(A) A  &hold LS(LEFT_ALT) S  &hold LS(LEFT_SHIFT) D  &hold LEFT_CONTROL F  &lt 2 G           &lt 3 H        &hold LEFT_CONTROL J   &hold RIGHT_SHIFT K    &hold RIGHT_ALT L  &hold COLON SEMI      &hold SINGLE_QUOTE ENTER
 &kp LEFT_SHIFT      &hold LS(Z) Z  &hold LS(X) X         &hold LS(C) C           &hold LS(V) V         &hold LS(B) B     &hold B N      &hold LS(M) M          &hold LS(COMMA) COMMA  &hold LS(DOT) DOT  &hold QUESTION SLASH  &kp RSHFT
-                                                         &mo_to 1 1              &hold LEFT_ALT TAB    &mo_to 2 2        &kp ENTER      &lt 1 SPACE
+                                                         &lt 1 SINGLE_QUOTE      &lt 2 TAB             &lt 2 SPACE       &kp ENTER      &lt 1 SPACE
                                                                                  &lt 6 SPACE           &lt 2 ESC         &mkp LCLK
             >;
 
@@ -238,9 +238,9 @@ behaviors {
             bindings = <
 &kp TILDE         &kp EXCLAMATION  &kp HASH      &kp DOLLAR                                &kp DOLLAR      &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS             &kp UNDERSCORE
 &kp N1            &kp N2           &kp N3        &kp N4                                    &kp N5          &kp N6         &kp N7     &kp N7         &kp N8        &kp N9                &kp MINUS                         &kp DEL
-&kp LEFT_CONTROL  &kp PLUS         &kp ASTERISK  &kp PERCENT                               &kp UNDERSCORE  &kp MINUS      &trans     &kp N4         &kp N5        &kp N6                &hold RIGHT_BRACKET LEFT_BRACKET  &kp RET
-&kp LSHFT         &kp EQUAL        &kp NUMBER_0  &hold RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp EQUAL       &kp PLUS       &kp N0     &kp N1         &kp N2        &kp N3                &kp BSLH                          &kp RSHFT
-                                                 &tog 1                                    &trans          &trans         &kp DOT    &kp N0
+&kp EXCLAMATION   &kp PLUS         &kp ASTERISK  &kp PERCENT                               &kp UNDERSCORE  &kp MINUS      &trans     &kp N4         &kp N5        &kp N6                &hold RIGHT_BRACKET LEFT_BRACKET  &kp RET
+&kp AT_SIGN       &kp EQUAL        &kp NUMBER_0  &hold RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp EQUAL       &kp PLUS       &kp N0     &kp N1         &kp N2        &kp N3                &kp BSLH                          &kp RSHFT
+                                                 &trans                                    &trans          &trans         &kp DOT    &kp N0
                                                                                            &trans          &trans         &kp SPACE
             >;
 
@@ -251,7 +251,7 @@ behaviors {
             bindings = <
 &kp F12             &kp F1  &kp F2         &kp F3  &kp F4  &kp F5    &kp F6           &kp F7     &kp F8     &kp F9     &kp F10    &kp F11
 &tab_dance_esc_tab  &kp F2  &kp F12        &trans  &trans  &trans    &kp PAGE_UP      &kp HOME   &kp UP     &kp END    &none      &kp BSPC
-&kp LEFT_CONTROL    &trans  &kp LS(LG(S))  &trans  &trans  &trans    &lt 6 PAGE_DOWN  &kp LEFT   &kp DOWN   &kp RIGHT  &trans     &kp RET
+&kp LEFT_CONTROL    &trans  &kp LS(LG(S))  &trans  &trans  &trans    &lt 3 PAGE_DOWN  &kp LEFT   &kp DOWN   &kp RIGHT  &trans     &kp RET
 &kp LEFT_SHIFT      &trans  &trans         &trans  &trans  &trans    &mkp MCLK        &mkp LCLK  &mkp RCLK  &mkp MB4   &kp LC(W)  &trans
                                            &trans  &trans  &trans    &trans           &trans
                                                    &trans  &trans    &trans
@@ -262,12 +262,12 @@ behaviors {
 
        Mouse {
             bindings = <
-&none        &none         &none         &none         &none      &none         &none       &none      &none         &none         &none         &none
-&none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 3  &none      &bt BT_CLR    &bt BT_CLR  &none      &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none
-&none        &trans        &trans        &mkp MCLK     &trans     &none         &none       &trans     &mkp MCLK     &trans        &trans        &none
-&bootloader  &trans        &mkp RCLK     &mo 4         &mkp LCLK  &mo 5         &mo 5       &mkp LCLK  &mo 4         &mkp RCLK     &trans        &bootloader
-                                         &mo 5         &mkp LCLK  &mkp RCLK     &mkp RCLK   &mkp LCLK
-                                                       &none      &trans        &trans
+&trans  &trans  &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &trans
+                           &trans     &trans     &trans       &trans     &trans
+                                      &trans     &trans       &trans
             >;
              sensor-bindings = <&scroll_vertical_encoder>,   // 编码器1：上下滚动
                              <&scroll_horizontal_encoder>;  // 编码器2：左右滚动
@@ -278,9 +278,9 @@ behaviors {
             bindings = <
 &trans  &trans  &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &trans
 &trans  &trans  &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans     &mkp MCLK  &trans     &trans       &trans     &trans     &mkp MCLK  &trans     &trans  &trans
-&trans  &trans  &mkp RCLK  &trans     &mkp LCLK  &trans       &trans     &mkp LCLK  &trans     &mkp RCLK  &trans  &trans
-                           &trans     &mkp LCLK  &mkp RCLK    &mkp RCLK  &mkp LCLK
+&trans  &trans  &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &trans
+                           &trans     &trans     &trans       &trans     &trans
                                       &trans     &trans       &trans
             >;
                 
@@ -292,9 +292,9 @@ behaviors {
             bindings = <
 &trans  &trans  &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &trans
 &trans  &trans  &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans     &mkp MCLK  &trans     &trans       &trans     &trans     &mkp MCLK  &trans     &trans  &trans
-&trans  &trans  &mkp RCLK  &trans     &mkp LCLK  &trans       &trans     &mkp LCLK  &trans     &mkp RCLK  &trans  &trans
-                           &trans     &mkp LCLK  &mkp RCLK    &mkp RCLK  &mkp LCLK
+&trans  &trans  &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &trans
+                           &trans     &trans     &trans       &trans     &trans
                                       &trans     &trans       &trans
             >;
                 
