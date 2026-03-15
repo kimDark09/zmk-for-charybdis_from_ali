@@ -227,8 +227,8 @@ behaviors {
 &tab_dance_esc_tab  &hold LS(Q) Q  &hold LS(W) W         &hold LS(E) E           &hold LS(R) R         &hold LS(T) T     &hold LS(Y) Y  &hold LS(U) U          &hold LS(I) I          &hold LS(O) O      &hold LS(P) P         &kp BACKSPACE
 &kp LEFT_CONTROL    &hold LS(A) A  &hold LS(LEFT_ALT) S  &hold LS(LEFT_SHIFT) D  &hold LEFT_CONTROL F  &lt 2 G           &lt 3 H        &hold LEFT_CONTROL J   &hold RIGHT_SHIFT K    &hold RIGHT_ALT L  &hold COLON SEMI      &hold SINGLE_QUOTE ENTER
 &kp LEFT_SHIFT      &hold LS(Z) Z  &hold LS(X) X         &hold LS(C) C           &hold LS(V) V         &hold LS(B) B     &hold B N      &hold LS(M) M          &hold LS(COMMA) COMMA  &hold LS(DOT) DOT  &hold QUESTION SLASH  &kp RSHFT
-                                                         &lt 1 SINGLE_QUOTE      &lt 2 TAB             &lt 2 SPACE       &kp ENTER      &lt 1 SPACE
-                                                                                 &lt 6 SPACE           &lt 2 ESC         &mkp LCLK
+                                                         &lt 1 SINGLE_QUOTE      &lt 2 TAB             &lt 2 CAPS        &kp ENTER      &lt 1 SPACE
+                                                                                 &lt 6 RIGHT_ALT       &lt 2 ESC         &mkp LCLK
             >;
 
 
@@ -247,7 +247,7 @@ behaviors {
           
         };
 
-        /* layer_2 {
+        layer_2 {
             bindings = <
 &kp F12             &kp F1  &kp F2         &kp F3  &kp F4  &kp F5    &kp F6           &kp F7     &kp F8     &kp F9     &kp F10    &kp F11
 &tab_dance_esc_tab  &kp F2  &kp F12        &trans  &trans  &trans    &kp PAGE_UP      &kp HOME   &kp UP     &kp END    &none      &kp BSPC
